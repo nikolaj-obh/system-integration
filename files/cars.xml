@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+    <car>
+        <make>Toyota</make>
+        <model>Camry</model>
+        <year>2018</year>
+        <color>Silver</color>
+    </car>
+    <car>
+        <make>Honda</make>
+        <model>Accord</model>
+        <year>2020</year>
+        <color>Blue</color>
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Mustang</model>
+        <year>2019</year>
+        <color>Red</color>
+    </car>
+</cars>

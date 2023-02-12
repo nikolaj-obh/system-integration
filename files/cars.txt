@@ -1,0 +1,17 @@
+Car 1:
+  Make: Toyota
+  Model: Camry
+  Year: 2018
+  Color: Silver
+
+Car 2:
+  Make: Honda
+  Model: Accord
+  Year: 2020
+  Color: Blue
+
+Car 3:
+  Make: Ford
+  Model: Mustang
+  Year: 2019
+  Color: Red

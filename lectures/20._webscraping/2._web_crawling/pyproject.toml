@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "2- web-crawling"
+version = "0.1.0"
+description = ""
+authors = ["William Omø <williamjean.k.o@gmail.com>"]
+readme = "README.md"
+packages = [{include = "2"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.30.0"
+beautifulsoup4 = "^4.12.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

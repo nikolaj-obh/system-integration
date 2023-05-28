@@ -1,16 +1,17 @@
 {
   "name": "node",
   "version": "1.0.0",
+  "type":"module",
   "description": "",
-  "type": "module",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
+    "envvariable-dev":"nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3"
   }
 }

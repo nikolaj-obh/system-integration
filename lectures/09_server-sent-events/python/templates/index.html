@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Server-sent event</h1>
+    <p>Server sent data:</p>
+    <div id="server-sent_data"></div>
+    <script>
+        const eventSource = new EventSource("http://127.0.0.1:8000/sse");
+        const serverSentDataDiv = document.getElementById("server-sent_data");
+
+        eventSource.addEventListener("new_message", (event) =>{
+            serverSentDataDiv.innerText = event.data;
+        })
+
+        /*eventSource.onmessage = (event) => {
+            console.log(event);
+        };*/
+        eventSource.end((event) =>{
+            console.log("handling end...");
+            eventSource.close();
+        });
+
+    </script>
+</body>
+</html>
